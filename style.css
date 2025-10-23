@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body     
+{
+  min-height: 100vh;
+  overflow-y: auto;
+
+}
+/* Grid container — full viewport height */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  grid-column: 1 / 10;
+  padding: 10px;
+  position: relative;
+}
+
+.navbar ul {
+  background-color: rgba(236, 117, 173, 0.822);
+  border-radius: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+  float: right;
+  max-height: none;  /* default for desktop */
+  overflow: visible;
+  transition: max-height .5s ease-in-out;
+}
+
+.navbar ul.{
+  max-height: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  padding-inline: 20px;
+}
+
+.navbar a {
+  font-size: 2.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(241, 11, 126, 0.959);
+}
+
+.navbar #logo {
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  border-radius: 40px;
+  color: rgb(19, 4, 16);
+  transition: 0.4s ease-in-out;
+}
+
+.navbar #logo:hover {
+  background-color: rgb(208, 255, 1);
+  color: black;
+}
+
+.navbar #menu {
+  display: none; /* hidden in desktop */
+  color: rgb(199, 160, 160);
+  background-color: rgb(144, 47, 163);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+/* Image section */
+.image-section {
+  grid-column: 1 / 5;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.image-section img {
+  border-radius: 10%;
+  width: 85%;
+  max-width: 100%;
+  height: auto;
+  transition: 0.3s ease-in-out;
+}
+
+.image-section img:hover {
+  transform: rotate(50deg);
+}
+
+/* Text section */
+.text-section {
+  grid-column: 5 / 11;
+  display: grid;
+  place-content: center;
+}
+
+.text-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-section li:nth-child(1) {
+  font-family: monospace;
+  font-size: 4rem;
+}
+
+.text-section li:nth-child(2) {
+  font-size: 3rem;
+}
+
+.text-section li:nth-child(3) {
+  font-size: 2rem;
+  color: rgb(223, 4, 15);
+}
