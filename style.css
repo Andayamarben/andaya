@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ body
   overflow-y: auto;
 
 }
-/* Grid container — full viewport height */
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -24,7 +24,6 @@ body
   min-height: 100vh;
 }
 
-/* Navbar */
 .navbar {
   grid-column: 1 / 10;
   padding: 10px;
@@ -39,7 +38,7 @@ body
   flex-direction: row-reverse;
   padding: 10px;
   float: right;
-  max-height: none;  /* default for desktop */
+  max-height: none;  
   overflow: visible;
   transition: max-height .5s ease-in-out;
 }
@@ -76,7 +75,7 @@ body
 }
 
 .navbar #menu {
-  display: none; /* hidden in desktop */
+  display: none; 
   color: rgb(199, 160, 160);
   background-color: rgb(144, 47, 163);
   padding: 5px;
@@ -87,7 +86,7 @@ body
   top: 20px;
 }
 
-/* Image section */
+
 .image-section {
   grid-column: 1 / 5;
   text-align: center;
@@ -106,7 +105,6 @@ body
   transform: rotate(50deg);
 }
 
-/* Text section */
 .text-section {
   grid-column: 5 / 11;
   display: grid;
