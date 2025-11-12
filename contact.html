@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <div class="grid-container">
+    <nav class="navbar">
+      <div id="logo">My Portfolio</div>
+      <div id="menu"onclick="toggleMenu()">☰</div>
+      <ul id= "nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <section class="image-section">
+      <img src="mypic.jpg" alt="My Picture">
+    </section>
+ 
+    <div class="text-section">
+    <h1>contact me</h1>
+    <p>Get in touch with me using the detials below:</p>
+      <ul class="contact-info" >
+        <li><strong>Email:</strong> marbenandaya@430gmail.com</li>
+        <li>Phone:</strong>09264104482</li>
+        <li>Address:</strong>Katacgahan, Bais city</li>
+  
+  </div>
+ </div class="footer"></div>
+ </div>
+
+  <script>
+  function toggleMenu() {
+        document.getElementById('nav-links').classList.toggle('show');
+      }
+  </script>
+
+</body>
+</html>   
